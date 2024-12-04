@@ -1,8 +1,4 @@
-// import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import { Link } from "react-router-dom";
-// import Inicio from '../pages/Inicio'
-// import Doados from '../pages/doados'
-// import Doar from '../pages/querodoar'
 import s from './header.module.scss'
 import logolivro from '../assets/imagem/logolivro.png'
 import lupa from '../assets/imagem/lupa.png'
@@ -17,7 +13,7 @@ export default function Header() {
                 <h1>Livros Vai Na Web</h1>
             </section>
 
-            {/* <BrowserRouter> */}
+         
                 <nav className={s.navHeader}>
                     <ul>
 
@@ -40,15 +36,6 @@ export default function Header() {
                     </button>
                 </section>
 
-
-                {/* <Routes>
-
-                    <Route path="/" element={<Inicio />} />
-                    <Route path="doados" element={<Doados />} />
-                    <Route path="doar" element={<Doar />} />
-
-                </Routes> */}
-            {/* </BrowserRouter> */}
         </header>
     )
 }
