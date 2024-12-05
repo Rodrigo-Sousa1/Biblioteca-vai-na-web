@@ -17,8 +17,7 @@ function App() {
 
     <Header/>
     <Rotas/>
-    
-   <Footer/>
+    <Footer/>
  
     </Router>
     </>
