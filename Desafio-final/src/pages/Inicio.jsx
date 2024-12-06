@@ -6,7 +6,7 @@ import img4 from '../assets/imagem/img5.png'
 
 export default function Inicio() {
     return (
-        <main className={s.mainInicio}>
+        <main>
 
             <section className={s.container1}>
                 <div>

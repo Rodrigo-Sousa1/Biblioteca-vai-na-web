@@ -13,13 +13,13 @@ function App() {
 
   return (
     <>
-    <Router>
+   
 
-    <Header/>
+    
     <Rotas/>
     <Footer/>
  
-    </Router>
+    
     </>
   )
 }

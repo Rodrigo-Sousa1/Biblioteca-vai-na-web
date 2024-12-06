@@ -1,8 +1,28 @@
 
-.footer{ background-color: #005695;
-    border: solid red;
-    width: 50vw;
+.footer{ background-color: #005695; 
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    img{ width: 10vw;
-    height: 10vh;}
+    img{ width: 3vw;
+    height: 5vh;}
+
+    section{ 
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h3{color: white;
+        font-size: 2vw;}
+    }
+
+    nav{
+        width: 21%;
+        display: flex;
+        justify-content: space-between;
+    }
+
 }
