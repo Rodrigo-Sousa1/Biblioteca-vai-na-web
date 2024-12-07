@@ -1,28 +1,68 @@
-
-.footer{ background-color: #005695; 
-    width: 100%;
-    height: 15vh;
+.rodape{background-color: #005695;}
+.secaoContato {
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-    img{ width: 3vw;
-    height: 5vh;}
-
-    section{ 
-        width: 90%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        h3{color: white;
-        font-size: 2vw;}
+    justify-content: space-between;
+    padding-inline: 2.5rem;
+    background-color: primary; 
+    padding-block: 2rem;
+  
+    p {
+      font-weight: 700;
     }
-
-    nav{
-        width: 21%;
-        display: flex;
-        justify-content: space-between;
+  }
+  
+  .containerIcons {
+    display: flex;
+    gap: 10px;
+  
+    img {
+      width: 25px;
+      cursor: pointer;
     }
-
+    
 }
+  .numeroContato{
+    color: white;
+}
+  
+  
+  .secaoInfovnw {
+    background-color: black;
+    padding-block: 1.4rem;
+  }
+  
+  .textoInformativo {
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  @media (max-width: breakpoint-mobile) {
+   .secaoContato {
+    flex-direction: column;
+    gap: 1.4rem;
+    padding-inline: 1.8rem;
+    padding-block: 0.9rem;
+    align-items: center;
+  
+    p {
+      font-size: 20px;
+    }
+  }
+  
+  .containerIcons {
+    gap: 20px;
+  
+    img {
+      width: 30px;
+    }
+  }
+  
+  .secaoInfovnw {
+    padding-block: 1rem;
+  
+    .textoInformativo {
+      font-size: 15px;
+    }
+  }
+  
+  }

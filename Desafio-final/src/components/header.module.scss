@@ -10,10 +10,11 @@
   }
 
   .logoHeader {
+    max-width: 97vw;
+    margin: 0 auto;
     display: flex;
-    width: 25%;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
    
   
     img {
@@ -21,7 +22,7 @@
     }
   
     h1 {
-      font-size: 30px;
+      font-size: 2vw;
       color: #fff;
     }
   }
@@ -31,15 +32,54 @@
     
   
     ul {
-      display: flex;
-      justify-content: space-around;
-      list-style: none;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
     }
   
     .link {
-      color: #fff;
-      font-size: 20px;
-      text-decoration: none;
+      color: #ccc;
+      font-size: 1.5vw;
+  position: relative;
+  transition: color 0.4s ease;
+  font-weight: 500;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    bottom: -3px; /* Distância do texto */
+    transition: width 0.4s ease-in-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    right: 0;
+    bottom: -3px; /* Distância do texto */
+    transition: width 0.4s ease-in-out;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+
+  &:hover {
+    color: white;
+  }
+
     }
   }
 
@@ -66,8 +106,41 @@
     }
   
     button {
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
+      position: absolute;
+    right: 33px;
+    top: 53%; 
+    transform: translateY(50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;  
+     
+    img {
+      width: 18px;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(0.94);
+      }
     }
+
+
+    }
+  }
+
+  @media (max-width: 800px) {
+    .header{padding-block: 0.7rem;
+      flex-direction: column;
+      gap: 28px;}
+
+    
+
+    .barraDeBusca{
+      display: none;
+    }
+
+    .navHeader{
+      ul, li, .link{font-size: 18px;}
+    }
+
+    .barraDeBusca{display: none;}
   }
