@@ -1,7 +1,7 @@
 .mainDoados {
     display: flex;
     flex-direction: column;
-    height: 65vh;
+    height: 75vh;
 
     h2 {
         text-align: center;
@@ -10,8 +10,10 @@
     }
 }
 
-.container {
-    width: 99.7vw;
+.container { 
+    height: 60vh;
+  display: flex;
+  flex-direction: row;
 
     div {
         border: solid black;
@@ -22,6 +24,7 @@
         justify-content: center;
         align-items: center;
         width: 15vw;
+        height: 50vh;
         cursor: pointer;
     }
 
@@ -31,3 +34,25 @@
         height: 30vh;
     }
 }
+
+.boxBooks{ 
+    width: 85vw;
+    height: 10vh;
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+    article{
+      border: solid black;
+        border-radius: 10%;
+        box-shadow: gray 3px 7px 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 15vw;
+        height: 50vh;
+        cursor: pointer; }
+    }

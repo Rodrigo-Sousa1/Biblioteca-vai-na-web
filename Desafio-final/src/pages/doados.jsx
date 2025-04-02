@@ -35,6 +35,7 @@ export default function Doados() {
                 <p>Ficção</p>
                 </div>
 
+           <section className= {s.boxBooks}>
                  {livros.map((item) => (
                      <article key={item.id}>
                          <img src={item.imagem_url} alt={item.titulo} />
@@ -43,6 +44,8 @@ export default function Doados() {
                          <p>{item.categoria}</p>
                      </article>
                  ))}
+
+           </section>
 
             </section>
 
